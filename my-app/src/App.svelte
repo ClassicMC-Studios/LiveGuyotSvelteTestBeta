@@ -1,45 +1,35 @@
 <script>
-  import svelteLogo from './assets/svelte.svg'
-  import Counter from './lib/Counter.svelte'
+	import Sidebar from './elements/Sidebar.svelte';
+	import Grid from './elements/Grid.svelte';
+	import Appbar from './elements/Appbar.svelte';
+	import Newsbar from './elements/Newsbar.svelte';
 </script>
-
-<main>
-  <div>
-    <a href="https://vitejs.dev" target="_blank" rel="noreferrer"> 
-      <img src="/vite.svg" class="logo" alt="Vite Logo" />
-    </a>
-    <a href="https://svelte.dev" target="_blank" rel="noreferrer"> 
-      <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
-    </a>
-  </div>
-  <h1>Vite + Svelte</h1>
-
-  <div class="card">
-    <Counter />
-  </div>
-
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank" rel="noreferrer">SvelteKit</a>, the official Svelte app framework powered by Vite!
-  </p>
-
-  <p class="read-the-docs">
-    Click on the Vite and Svelte logos to learn more
-  </p>
-</main>
-
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://classicmc-studios.github.io/bc.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <style>
-  .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-  }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-  }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
-  }
-  .read-the-docs {
-    color: #888;
-  }
+	:global(body){
+		margin: 0%;
+		padding: 0%;
+		/* A whole bunch of garbage to get backgrounds working */
+		background-image: url("https://classicmc-studios.github.io/guyot/christmas-ducky.png");
+		background-repeat:no-repeat;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		color: #bfc2c7;
+		font-family: sans-serif;
+	}
+	.content{
+		margin: 0%;
+    margin-left: 80px;
+	}
 </style>
+<main>
+	<Sidebar/>
+	<div class="content"> 
+		<Grid/>
+		<Appbar/>
+		<Newsbar/>
+	</div>
+</main>
