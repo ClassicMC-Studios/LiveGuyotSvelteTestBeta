@@ -7,8 +7,8 @@
     const SNOWFLAKES_COUNT = 60
     const SNOWFLAKE_MIN_SCALE = 0.4
     const MAX_FALL_DURATION = 10000
-    const MELTING_WAIT = 1000
-    const MELTING_DURATION = 4000
+    const MELTING_WAIT = 0
+    const MELTING_DURATION = 1000
     const WIND_FORCE = 0.25
     const SNOW_ICONS = ['❆', '❅', '❄']
   
