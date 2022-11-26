@@ -14,9 +14,6 @@
 		transition: 0.3s; 
 	}
 	.hv:hover{background-color: #182835;} 
-	.small{
-		text-size: 10px!important;
-	}
 	a{text-decoration: none;}
 	a:hover{text-decoration: underline;}
 </style>
