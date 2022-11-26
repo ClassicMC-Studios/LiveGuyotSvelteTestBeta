@@ -3,6 +3,7 @@
 	import Grid from './elements/Grid.svelte';
 	import Appbar from './elements/Appbar.svelte';
 	import Newsbar from './elements/Newsbar.svelte';
+	import Sno from './Sno.svelte';
 </script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://classicmc-studios.github.io/bc.css">
@@ -22,7 +23,7 @@
 	}
 	.content{
 		margin: 0%;
-    margin-left: 80px;
+    	margin-left: 80px;
 	}
 </style>
 <main>
@@ -32,4 +33,5 @@
 		<Appbar/>
 		<Newsbar/>
 	</div>
+	<Sno/>
 </main>
