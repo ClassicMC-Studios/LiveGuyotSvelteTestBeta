@@ -42,13 +42,14 @@
 <div class="w3-row">
 <!-- Item 1	 -->
 	<div class="w3-col item w3-margin bc-r-25 hv" style="width:220px; height:220px;">
-		<h1><blue><b>v0.6</b></blue></h1>
+		<h1><blue><b>v0.6.2</b></blue></h1>
 		<p>
 			<b>Changelog</b>
 		</p>
 		<p>
-			- Added Positions<br/>
-			- Keeping chromebooks...
+			- Added Snow<br/>
+			- Change meltSpeed to<br/>
+			1000
 		</p>
 	</div>
 <!-- Item 2	 -->
