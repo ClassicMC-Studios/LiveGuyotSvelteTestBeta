@@ -32,21 +32,21 @@
 		<p>We need</p>
 		<h1><b>Your</b> Help!</h1>
 		<p>To keep this site running</p>
-		<h4>See <a href="https://google.com"><blue>positions</blue></a></h4>
+		<h4>See <a href="https://guyotjs.github.io/east"><blue>positions</blue></a></h4>
 	</div>
 </div>
 <!-- Layer 2 -->
 <div class="w3-row">
 <!-- Item 1	 -->
 	<div class="w3-col item w3-margin bc-r-25 hv" style="width:220px; height:220px;">
-		<h1><blue><b>v0.6.2</b></blue></h1>
+		<h1><blue><b>v0.7</b></blue></h1>
 		<p>
 			<b>Changelog</b>
 		</p>
 		<p>
-			- Added Snow<br/>
-			- Change meltSpeed to<br/>
-			1000
+			- Snow pos Fixed<br/>
+			- Issue #1 fixed<br/>
+			- Pokémon Red
 		</p>
 	</div>
 <!-- Item 2	 -->
@@ -60,6 +60,7 @@
 		<h1>Upcoming</h1>
 		<p><blue>Super Mario Kart(2ply*)</blue></p>
 		<p><blue>Final Fantasy VI</blue></p>
+		<p><blue>Pokémon Red</blue></p>
 	</div>
 </div>
 </main>

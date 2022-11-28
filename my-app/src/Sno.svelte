@@ -95,9 +95,12 @@
       left: 0;
       overflow: hidden;
     }
+    .fixed{
+      position: fixed;
+    }
   </style>
   
-  <div class="snowframe" aria-hidden="true">
+  <div class="snowframe fixed" aria-hidden="true">
     {#each snowflakes as flake}
       {#if flake.visible}
         <div
