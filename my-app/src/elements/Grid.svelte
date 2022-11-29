@@ -1,5 +1,10 @@
 <script>
-
+	import { text } from 'svelte/internal';
+	import { fade, draw, fly } from 'svelte/transition';
+	let visable = false;
+	function startUp(){
+		visable = true; 
+	} 
 </script>
 <style>
 	.item{
@@ -16,21 +21,37 @@
 	.hv:hover{background-color: #182835;} 
 	a{text-decoration: none;}
 	a:hover{text-decoration: underline;}
+	.shadow{
+		text-shadow: 0px 0px 20px rgb(255, 255, 255);
+	}
 </style>
+<svelte:window on:load={startUp()}/>
 <main>
 <!-- Layer 1	 -->
 <div class="w3-row">
 <!-- Item 1 -->
-	<div class="w3-col item w3-margin bc-r-25 hv" style="width:220px; height:220px;">
+	<div class="w3-col item w3-margin bc-r-25 hv bc-border bc-bdc-white" style="width:220px; height:220px;">
 		<p>
-			Welcome to<br/><em>Guyot</em><br/>Keeping Chromebooks<br/><b>Open Source</b><br/>
+			Welcome to<br/><em>
+				{#if visable}
+					{#each 'Guyot' as text,i}
+						<span in:fade="{{delay: 0 + i * 150, duration: 800}}">{text}</span>
+					{/each}
+				{/if}
+			</em><br/>Keeping Chromebooks<br/><b>Open Source</b><br/>
 			<img src="https://classicmc-studios.github.io/guyot/comp.png" alt="computer"/>
 		</p>
 	</div>
 <!-- Item 2 -->
-	<div class="item w3-col w3-margin bc-r-25 hv" style="width:220px; height:220px;">
+	<div class="item w3-col w3-margin bc-r-25 hv bc-border bc-bdc-white" style="width:220px; height:220px;">
 		<p>We need</p>
-		<h1><b>Your</b> Help!</h1>
+		<h1><b>
+			{#if visable}
+				{#each 'Your Help' as text,i}
+					<span class="shadow" in:fade="{{delay: 0 + i * 150, duration: 800}}">{text}</span>
+				{/each}
+			{/if}
+		</b></h1>
 		<p>To keep this site running</p>
 		<h4>See <a href="https://guyotjs.github.io/east"><blue>positions</blue></a></h4>
 	</div>
@@ -38,8 +59,14 @@
 <!-- Layer 2 -->
 <div class="w3-row">
 <!-- Item 1	 -->
-	<div class="w3-col item w3-margin bc-r-25 hv" style="width:220px; height:220px;">
-		<h1><blue><b>v0.7</b></blue></h1>
+	<div class="w3-col item w3-margin bc-r-25 hv bc-border bc-bdc-white" style="width:220px; height:220px;">
+		<h1><b>
+			{#if visable}
+				{#each 'v0.8' as text,i}
+					<span class="shadow" in:fade="{{delay: 0 + i * 150, duration: 800}}">{text}</span>
+				{/each}
+			{/if}
+		</b></h1>
 		<p>
 			<b>Changelog</b>
 		</p>
@@ -50,14 +77,26 @@
 		</p>
 	</div>
 <!-- Item 2	 -->
-	<div class="w3-col item w3-margin bc-r-25 hv" style="width:220px; height:220px;">
-		<h1><b>Info</b></h1><p>
+	<div class="w3-col item w3-margin bc-r-25 hv bc-border bc-bdc-white" style="width:220px; height:220px;">
+		<h1><b>
+			{#if visable}
+				{#each 'Info' as text,i}
+					<span class="shadow" in:fade="{{delay: 0 + i * 150, duration: 800}}">{text}</span>
+				{/each}
+			{/if}
+		</b></h1><p>
 			This website is <em>open source</em>!</p>
 		<p>Help us <a href="https://github.com/guyotJs/guyotJs.github.io"><blue>improve</blue></a></p>
 	</div>
 <!-- Upcoming -->
-	<div class="w3-col item w3-margin bc-r-25 hv" style="width:220px; height:220px;">
-		<h1>Upcoming</h1>
+	<div class="w3-col item w3-margin bc-r-25 hv bc-border bc-bdc-white" style="width:220px; height:220px;">
+		<h1>
+			{#if visable}
+				{#each 'Upcoming' as text,i}
+					<span class="shadow" in:fade="{{delay: 0 + i * 150, duration: 800}}">{text}</span>
+				{/each}
+			{/if}
+		</h1>
 		<p><blue>Super Mario Kart(2ply*)</blue></p>
 		<p><blue>Final Fantasy VI</blue></p>
 		<p><blue>Pokémon Red</blue></p>

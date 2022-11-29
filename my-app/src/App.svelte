@@ -5,15 +5,13 @@
 	import Newsbar from './elements/Newsbar.svelte';
 	import Sno from './Sno.svelte';
 </script>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://classicmc-studios.github.io/bc.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <style>
 	:global(body){
 		margin: 0%;
 		padding: 0%;
 		/* A whole bunch of garbage to get backgrounds working */
-		background-image: url("https://classicmc-studios.github.io/guyot/christmas-ducky.png");
+		background-image: url("./assets/christmas-ducky.png");
 		background-repeat:no-repeat;
 		background-size: cover;
 		background-position: center center;
