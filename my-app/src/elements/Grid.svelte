@@ -62,7 +62,7 @@
 	<div class="w3-col item w3-margin bc-r-25 hv bc-border bc-bdc-white" style="width:220px; height:220px;">
 		<h1><b>
 			{#if visable}
-				{#each 'v0.8' as text,i}
+				{#each 'v0.8.1' as text,i}
 					<span class="shadow" in:fade="{{delay: 0 + i * 150, duration: 800}}">{text}</span>
 				{/each}
 			{/if}
@@ -71,9 +71,10 @@
 			<b>Changelog</b>
 		</p>
 		<p>
-			- Snow pos Fixed<br/>
-			- Issue #1 fixed<br/>
-			- Pokémon Red
+			- CSS now built in<br/>
+			- White border added<br/>
+			- New icons and shadow<br/>
+			- Fade in effect
 		</p>
 	</div>
 <!-- Item 2	 -->
