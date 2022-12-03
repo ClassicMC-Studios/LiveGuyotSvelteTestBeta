@@ -86,8 +86,11 @@
 				{/each}
 			{/if}
 		</b></h1><p>
-			This website is <em>open source</em>!</p>
-		<p>Help us <a href="https://github.com/guyotJs/guyotJs.github.io"><blue>improve</blue></a></p>
+			This Website is changing!<br/>
+			Visit the<br/>
+			<b>
+				<a href="https://guyotjs.github.io/beta"><h3>--Beta--</h3></a>
+			</b>
 	</div>
 <!-- Upcoming -->
 	<div class="w3-col item w3-margin bc-r-25 hv bc-border bc-bdc-white" style="width:220px; height:220px;">
